@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c669-5cdd-4321-bcc5-0107dbc15d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -33,6 +33,7 @@
           <entry key="Procfile" value="1" />
           <entry key="env" value="1" />
           <entry key="erb" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="rb" value="2" />
           <entry key="yml" value="1" />
@@ -41,7 +42,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="RHTML" value="1" />
           <entry key="Ruby" value="3" />
           <entry key="YAML" value="1" />
@@ -51,6 +52,7 @@
         <counts>
           <entry key="Procfile" value="2" />
           <entry key="env" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="rb" value="53" />
           <entry key="yml" value="45" />
@@ -59,7 +61,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Ruby" value="53" />
           <entry key="YAML" value="45" />
         </counts>
@@ -86,11 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="917">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -150,6 +161,7 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb.html" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -217,7 +229,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -332,12 +344,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538252253892</updated>
-      <workItem from="1538252257841" duration="6521000" />
+      <workItem from="1538252257841" duration="7262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6521000" />
+    <option name="totallyTimeSpent" value="7262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1168" extended-state="6" />
@@ -439,6 +451,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
