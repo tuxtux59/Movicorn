@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Title
+  %body
+    %h2 Welcome to Movicorn
+    %em The website to find when your favorite film will be available
+    %p
+      The time is now: #{Time.now}
+    %div
+      -125.times do
+        - OmdbItem.all.each do |item|
+          = image_tag(url_for(item.poster), width: 200)
