@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c669-5cdd-4321-bcc5-0107dbc15d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/movicorn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movicorn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -41,7 +35,7 @@
           <entry key="Procfile" value="1" />
           <entry key="env" value="1" />
           <entry key="erb" value="1" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="haml" value="1" />
           <entry key="html" value="1" />
           <entry key="rb" value="10" />
@@ -52,7 +46,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Haml" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="RHTML" value="1" />
           <entry key="Ruby" value="11" />
           <entry key="YAML" value="2" />
@@ -64,7 +58,7 @@
           <entry key="Procfile" value="2" />
           <entry key="env" value="1" />
           <entry key="erb" value="162" />
-          <entry key="gitignore" value="16" />
+          <entry key="gitignore" value="51" />
           <entry key="haml" value="119" />
           <entry key="html" value="1" />
           <entry key="rb" value="361" />
@@ -75,7 +69,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Haml" value="119" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="PLAIN_TEXT" value="54" />
           <entry key="RHTML" value="162" />
           <entry key="Ruby" value="365" />
           <entry key="YAML" value="45" />
@@ -94,11 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -203,9 +206,9 @@
         <option value="$PROJECT_DIR$/app/models/omdb_item.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -290,7 +293,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;omdb&#9;null&#9;null&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;omdb&#9;null&#9;null&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -406,12 +409,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538252253892</updated>
       <workItem from="1538252257841" duration="7262000" />
-      <workItem from="1538654916828" duration="6288000" />
+      <workItem from="1538654916828" duration="6501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16762000" />
+    <option name="totallyTimeSpent" value="16975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1168" extended-state="6" />
@@ -522,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -561,6 +557,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
