@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  released_date: 2018-09-30
+  released: MyString
+  runtime: 
+  locale: MyString
+  country: MyString
+  type: 
+
+two:
+  title: MyString
+  released_date: 2018-09-30
+  released: MyString
+  runtime: 
+  locale: MyString
+  country: MyString
+  type: 
