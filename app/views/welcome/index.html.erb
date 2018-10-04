@@ -10,7 +10,10 @@
     The time is now: <%= Time.now %>
 </p>
 <div>
-  <%= OmdbItem.all.map{|item| item.to_json} %>
+  <% OmdbItem.all.each do |item|%>
+    <%= image_tag(url_for(item.poster)) %>
+    <%# do something with the prepped date in each row %>
+  <% end %>
 </div>
 
 </body>
