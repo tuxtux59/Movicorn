@@ -9,6 +9,9 @@
 <p>
     The time is now: <%= Time.now %>
 </p>
+<div>
+  <%= OmdbItem.all.map{|item| item.to_json} %>
+</div>
 
 </body>
 </html>
