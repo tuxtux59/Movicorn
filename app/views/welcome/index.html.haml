@@ -3,19 +3,19 @@
     - @photosArray.each do |item|
       = image_tag(url_for(item))
 .container
-  .row
-    %h2 'Welcome to Movicorn'
-  .row
-    %em The website to find when your favorite film will be available
-  .row
-    %p
-      The time is now: #{Time.now}
-  .row
-    .col-sm-6.col-sm-offset-3.center
-      #imaginary_container
-        = form_tag('/search_item', method: 'get') do
-          .input-group
-            %input.form-control{:placeholder => "Search", :type => "text", name: 'item_title'}/
-            %span.input-group-addon
-              %button{:type => "submit", class: 'btn btn-submit'}
-                Rechercher
+  .col
+    .row
+      %h2 'Welcome to Movicorn'
+    .row
+      %em The website to find when your favorite film will be available
+    .row
+      %p
+        The time is now: #{Time.now}
+    .row
+      .col-sm-6.col-sm-offset-3.center
+        #imaginary_container
+          = form_tag('/search_item', method: 'get') do
+            .input-group
+              = text_field_tag :item_title, nil, placeholder: 'Titre du film', class: 'form-control'
+              .input-group-addon
+                = submit_tag 'Rechercher', class: 'btn btn-submit btn-secondary'
