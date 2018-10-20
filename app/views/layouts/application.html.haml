@@ -9,24 +9,7 @@
     %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"}
-    -#= stylesheet_link_tag    'default', media: 'all'
-    -#= javascript_include_tag 'application'
-    :css
-      #imaginary_container{
-          margin-top:20%; /* Don't copy this */
-      }
-      .stylish-input-group .input-group-addon{
-        background: white !important;
-      }
-      .stylish-input-group .form-control{
-        border-right:0;
-        box-shadow:0 0 0;
-        border-color:#ccc;
-      }
-      .stylish-input-group button{
-        border:0;
-        background:transparent;
-      }
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
   %body
-    .container
-      = yield
+    = yield
