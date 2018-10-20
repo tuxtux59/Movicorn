@@ -28,6 +28,7 @@ gem 'redis', '~> 4.0'
 gem 'rest-client'
 gem 'haml-rails', '~> 1.0'
 gem 'devise'
+gem 'simple_form'
 
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'

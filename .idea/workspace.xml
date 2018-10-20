@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c669-5cdd-4321-bcc5-0107dbc15d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/movicorn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movicorn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -67,7 +60,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="23" />
+          <entry key="Gemfile" value="24" />
           <entry key="Procfile" value="2" />
           <entry key="css" value="5" />
           <entry key="env" value="1" />
@@ -89,7 +82,7 @@
           <entry key="JavaScript" value="36" />
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="RHTML" value="162" />
-          <entry key="Ruby" value="778" />
+          <entry key="Ruby" value="779" />
           <entry key="SCSS" value="187" />
           <entry key="YAML" value="45" />
         </counts>
@@ -98,16 +91,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="182">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -199,12 +192,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20181007165310_devise_create_admin_users.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/welcome/jquery-photowall.js" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -314,7 +307,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;application.c&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;application.js&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/javascripts/application.js&#10;omd&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;pi&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;w&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;applicatio&#9;null&#9;null&#10;appl&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;.git&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;omdb&#9;null&#9;null&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;application.c&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;application.js&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/javascripts/application.js&#10;omd&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;pi&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;w&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;applicatio&#9;null&#9;null&#10;appl&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;.git&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;omdb&#9;null&#9;null&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -432,12 +425,12 @@
       <workItem from="1538252257841" duration="7262000" />
       <workItem from="1538654916828" duration="11579000" />
       <workItem from="1538929211593" duration="3401000" />
-      <workItem from="1540050876065" duration="7466000" />
+      <workItem from="1540050876065" duration="7828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32920000" />
+    <option name="totallyTimeSpent" value="33282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1168" extended-state="6" />
@@ -591,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -659,6 +645,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
