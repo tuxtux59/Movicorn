@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5183c669-5cdd-4321-bcc5-0107dbc15d14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/movicorn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movicorn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -19,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/movicorn@Development__movicorn.rcov" NAME="Development: movicorn Coverage Results" MODIFIED="1540074437752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="movicorn" />
+    <SUITE FILE_PATH="coverage/movicorn@Development__movicorn.rcov" NAME="Development: movicorn Coverage Results" MODIFIED="1540114427001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="movicorn" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="262279806">
@@ -69,7 +67,7 @@
           <entry key="css" value="5" />
           <entry key="env" value="1" />
           <entry key="erb" value="162" />
-          <entry key="gitignore" value="54" />
+          <entry key="gitignore" value="60" />
           <entry key="haml" value="1531" />
           <entry key="html" value="1" />
           <entry key="js" value="32" />
@@ -84,7 +82,7 @@
           <entry key="HTML" value="1" />
           <entry key="Haml" value="1527" />
           <entry key="JavaScript" value="36" />
-          <entry key="PLAIN_TEXT" value="57" />
+          <entry key="PLAIN_TEXT" value="63" />
           <entry key="RHTML" value="162" />
           <entry key="Ruby" value="1628" />
           <entry key="SCSS" value="189" />
@@ -134,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="374">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -493,12 +491,12 @@
       <workItem from="1538929211593" duration="3401000" />
       <workItem from="1540050876065" duration="12473000" />
       <workItem from="1540066220571" duration="8397000" />
-      <workItem from="1540114357627" duration="40000" />
+      <workItem from="1540114357627" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46364000" />
+    <option name="totallyTimeSpent" value="46909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1168" extended-state="6" />
@@ -509,10 +507,10 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
@@ -775,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="374">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
