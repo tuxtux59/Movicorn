@@ -16,25 +16,33 @@ module OmdbApi
     API_KEY = '?apikey=f032e0a4'
 
     def self.item_by_title(title)
-      result = JSON.parse OmdbApi.omdb_client[API_KEY].get({params:{t: title}})
-      if result.present? && result.is_a?(Hash) && result.keys.any?
-        valid_keys = OmdbItem.column_names
-        result2 = {}
-        result.each_pair do |k,v|
-          if valid_keys.include?(k.downcase)
-            result2.merge!({k.downcase => v})
+      begin
+        db_results = OmdbItem.where("lower(title) = ?", title.downcase)
+        if db_results.any?
+          return db_results.first
+        else
+          result = JSON.parse OmdbApi.omdb_client[API_KEY].get({params: {t: title}})
+          if result.present? && result.is_a?(Hash) && result.keys.any?
+            valid_keys = OmdbItem.column_names
+            result2 = {}
+
+            if valid_keys.include?(k.downcase)
+              result2.merge!({k.downcase => v})
+            end
           end
-        end
-        item = OmdbItem.create(result2) if result2.keys.any?
-        if result.key?('Poster')
-          file = open(result['Poster'])
-          if file.present?
-            item.poster.attach(io: file, filename: "#{item.title}.jpg")
+          item = OmdbItem.create(result2) if result2.keys.any?
+          if result.key?('Poster')
+            file = open(result['Poster'])
+            if file.present?
+              item.poster.attach(io: file, filename: "#{item.title}.jpg")
+            end
           end
+          return item
         end
-        return item
+        return result
+      rescue => e
+        puts e.message
       end
-      return result
     end
   end
 end

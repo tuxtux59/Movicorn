@@ -3,7 +3,14 @@ class Api::SearchController < ApplicationController
   end
 
   def item
-    render json: OmdbApi::Search.item_by_title(query_params)
+    result = OmdbApi::Search.item_by_title(query_params)
+    if result.is_a?(JSON)
+      render json: result
+    elsif result.is_a?(OmdbItem)
+      redirect_to movie_path(result)
+    else
+      render nothing: true, status: :unprocessable_entity
+    end
   end
 
   private

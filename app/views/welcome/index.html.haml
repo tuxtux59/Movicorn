@@ -1,6 +1,6 @@
 .m-wrapper
   -5.times do
-    - @photosArray.each do |item|
+    - @photosArray.shuffle.each do |item|
       = image_tag(url_for(item))
 .container
   .col
@@ -9,13 +9,10 @@
     .row
       %em The website to find when your favorite film will be available
     .row
-      %p
-        The time is now: #{Time.now}
-    .row
-      .col-sm-6.col-sm-offset-3.center
+      .col-sm-6.col-sm-offset-3.text-center
         #imaginary_container
-          = form_tag('/search_item', method: 'get') do
+          = form_tag( api_search_item_path, method: 'get') do
             .input-group
-              = text_field_tag :item_title, nil, placeholder: 'Titre du film', class: 'form-control'
+              = text_field_tag :query, nil, placeholder: 'Titre du film', class: 'form-control'
               .input-group-addon
                 = submit_tag 'Rechercher', class: 'btn btn-submit btn-secondary'
