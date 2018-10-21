@@ -1,4 +1,3 @@
-require 'em/pure_ruby'
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
