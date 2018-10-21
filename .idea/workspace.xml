@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5183c669-5cdd-4321-bcc5-0107dbc15d14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/omdb_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/omdb_api.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -17,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/movicorn@Development__movicorn.rcov" NAME="Development: movicorn Coverage Results" MODIFIED="1540114427001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="movicorn" />
+    <SUITE FILE_PATH="coverage/movicorn@Development__movicorn.rcov" NAME="Development: movicorn Coverage Results" MODIFIED="1540116426861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="movicorn" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="262279806">
@@ -38,7 +39,7 @@
           <entry key="env" value="1" />
           <entry key="erb" value="1" />
           <entry key="gitignore" value="4" />
-          <entry key="haml" value="8" />
+          <entry key="haml" value="9" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
           <entry key="rb" value="29" />
@@ -50,7 +51,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="HTML" value="1" />
-          <entry key="Haml" value="8" />
+          <entry key="Haml" value="9" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="RHTML" value="1" />
@@ -61,7 +62,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="39" />
+          <entry key="Gemfile" value="40" />
           <entry key="Guardfile" value="1" />
           <entry key="Procfile" value="2" />
           <entry key="css" value="5" />
@@ -71,7 +72,7 @@
           <entry key="haml" value="1531" />
           <entry key="html" value="1" />
           <entry key="js" value="32" />
-          <entry key="rb" value="1588" />
+          <entry key="rb" value="1605" />
           <entry key="scss" value="189" />
           <entry key="yml" value="130" />
         </counts>
@@ -84,7 +85,7 @@
           <entry key="JavaScript" value="36" />
           <entry key="PLAIN_TEXT" value="63" />
           <entry key="RHTML" value="162" />
-          <entry key="Ruby" value="1628" />
+          <entry key="Ruby" value="1646" />
           <entry key="SCSS" value="189" />
           <entry key="YAML" value="130" />
         </counts>
@@ -93,16 +94,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -120,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -161,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/omdb_api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="221">
+              <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -213,6 +218,7 @@
       <find>sim</find>
       <find>k, v</find>
       <find>i18</find>
+      <find>k</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -247,12 +253,12 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/omdb_api.rb" />
         <option value="$PROJECT_DIR$/config/locales/movies/fr.yml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.haml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/omdb_api.rb" />
       </list>
     </option>
   </component>
@@ -367,7 +373,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="ge&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;.giti&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;applica&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/application.rb&#10;omdbap&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;index&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/views/movies/index.html.haml&#10;movies/s&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/views/movies/show.html.haml&#10;om&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;omdb&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/welcome.scss&#10;omdbit&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;route&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;application.c&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;application.js&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/javascripts/application.js&#10;omd&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;pi&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;w&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;applicatio&#9;null&#9;null&#10;appl&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;.git&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/views/welcome/index.html.haml&#10;ge&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;.giti&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;gemf&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile&#10;applica&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/application.rb&#10;omdbap&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;movies/s&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/views/movies/show.html.haml&#10;om&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;omdb&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;welc&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/welcome.scss&#10;omdbit&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_item.rb&#10;route&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;application.c&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;application.js&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/javascripts/application.js&#10;omd&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;pi&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/models/omdb_api.rb&#10;w&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/controllers/welcome_controller.rb&#10;applicatio&#9;null&#9;null&#10;appl&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/app/assets/stylesheets/application.css&#10;.git&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;routes&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/routes.rb&#10;.gitig&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;developm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/environments/development.rb&#10;storage&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/storage.yml&#10;sche&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/db/schema.rb&#10;readm&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/README.md&#10;.g&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.gitignore&#10;wel&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/.env&#10;index.html.er&#9;FILE&#9;file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb&#10;data&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/config/database.yml&#10;gem&#9;FILE&#9;file://C:/Users/thiba/Documents/Dev/Web/rails/movicorn/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -487,12 +493,12 @@
       <workItem from="1538929211593" duration="3401000" />
       <workItem from="1540050876065" duration="12473000" />
       <workItem from="1540066220571" duration="8397000" />
-      <workItem from="1540114357627" duration="790000" />
+      <workItem from="1540114357627" duration="2020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47114000" />
+    <option name="totallyTimeSpent" value="48344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1168" extended-state="6" />
@@ -541,7 +547,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/omdb_api.rb</url>
-          <line>42</line>
+          <line>40</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -697,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -725,24 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/movies/fr.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="20" selection-start-line="1" selection-start-column="2" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/omdb_api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -756,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -767,8 +752,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/omdb_api.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

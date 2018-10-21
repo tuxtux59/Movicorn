@@ -25,10 +25,8 @@ module OmdbApi
           if result.present? && result.is_a?(Hash) && result.keys.any?
             valid_keys = OmdbItem.column_names
             result2 = {}
+            result.each_pair{|k,v| result2.merge!({k.downcase => v}) if valid_keys.include?(k.downcase)}
 
-            if valid_keys.include?(k.downcase)
-              result2.merge!({k.downcase => v})
-            end
           end
           item = OmdbItem.create(result2) if result2.keys.any?
           if result.key?('Poster')
