@@ -1,0 +1,5 @@
+fr:
+  movies:
+    index:
+      released: Date de sortie
+      runtime: Durée
