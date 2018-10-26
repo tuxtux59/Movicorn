@@ -1,14 +1,14 @@
 .m-wrapper
-  -5.times do
+  - 5.times do
     - @photosArray.shuffle.each do |item|
       = image_tag(url_for(item))
 .container
-  .col
-    .row
+  .col-sm-12.col-md-8.offset-md-2
+    .row.d-flex.justify-content-center
       %h2 'Welcome to Movicorn'
-    .row
+    .row.d-flex.justify-content-center
       %em The website to find when your favorite film will be available
-    .row
+    .row.d-flex.justify-content-center
       .col-sm-6.col-sm-offset-3.text-center
         #imaginary_container
           = form_tag( api_search_item_path, method: 'get') do
