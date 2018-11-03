@@ -1,0 +1,12 @@
+nav aria-label="breadcrumb"
+  ol.breadcrumb
+    li.breadcrumb-item
+      = link_to t('.home'), root_path
+      /a href="#"  Home
+    li.breadcrumb-item
+      = link_to t('.movies'), movies_path
+    li.breadcrumb-item.active aria-current="page" = @movie.title
+
+h1 #{@movie.title}
+= image_tag(url_for(@movie.poster)) if @movie.poster.attached?
+p #{@movie.to_json}
