@@ -1,0 +1,17 @@
+.container
+  h1 = t('.title')
+  p = t('.desc')
+  ul.list-unstyled.col-sm-12.col-md-6.offset-md-3.movies
+    - @movies.each do |movie|
+        li
+          = link_to movie_path(movie) do
+            .media.mb-2
+              = image_tag(url_for(movie.poster), class: 'align-self-center mr-3', style: 'height: 80px,; width: 60px') if movie.poster.attached?
+              .media-body.align-self-center.text-left
+                h5.mb-1 = movie.title
+                ul.list-unstyled
+                  - movie.attributes.slice('runtime', 'released').each_pair do |k, v|
+                    li
+                      strong
+                        = t(".#{k}")
+                      em = v

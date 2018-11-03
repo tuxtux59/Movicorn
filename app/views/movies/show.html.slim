@@ -5,8 +5,8 @@
       li.breadcrumb-item = link_to t('.movies'), movies_path
       li.breadcrumb-item.active aria-current="page" = @movie.title
 .container style='height: -webkit-fill-available;min-height: 100%;margin-top:-30vw; padding-top:30vw'
-  = image_tag(url_for(@movie.poster), class: 'img-thumbnail', style: 'position:fixed; top:24vw;left: 2vh;height:20vw') if @movie.poster.attached?
+  = image_tag(url_for(@movie.poster), class: 'img-thumbnail', style: 'position:fixed; top:24vw;left: 2vh;height:20vw;width:14vw') if @movie.poster.attached?
   .details style='padding-left:5vw;margin-top:-22vw;background:rgba(66, 66, 66, 0.85)'
     h1.display-4 = @movie.title
-    -35.times do
+    -10.times do
       p.lead = @movie.to_json
