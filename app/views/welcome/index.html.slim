@@ -1,0 +1,18 @@
+.m-wrapper
+  - 5.times do
+    - @photosArray.shuffle.each do |item|
+      = image_tag(url_for(item))
+.container.pt-0
+  .col-sm-12.col-lg-8.offset-lg-2.align-middle style='margin-top: 50vh;transform: translateY(-50%);'
+    .row.d-flex.justify-content-center
+      h2 'Welcome to Movicorn'
+    .row.d-flex.justify-content-center
+      em The website to find when your favorite film will be available
+    .row.d-flex.justify-content-center
+      .col-sm-8.col-sm-offset-2.col-md-10.col-md-offset-1.col-lg-6.col-lg-offset-3.text-center style='height:auto'
+        #imaginary_container
+          = form_tag(api_search_item_path, method: 'get') do
+            .input-group
+              = text_field_tag :query, nil, placeholder: 'Titre du film', class: 'form-control', required: true
+              .input-group-addon
+                = submit_tag 'Rechercher', class: 'btn btn-submit btn-secondary'
