@@ -6,7 +6,7 @@
         li
           = link_to movie_path(movie) do
             .media.mb-2
-              = image_tag(url_for(movie.poster), class: 'align-self-center mr-3', style: 'height: 80px,; width: 60px') if movie.poster.attached?
+              = image_tag(movie.poster_url, class: 'align-self-center mr-3 img-thumbnail', style: 'height: 80px,; width: 60px')
               .media-body.align-self-center.text-left
                 h5.mb-1 = movie.title
                 ul.list-unstyled
