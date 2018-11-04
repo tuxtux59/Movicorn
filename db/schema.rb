@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_07_165310) do
+ActiveRecord::Schema.define(version: 2018_11_03_151534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2018_10_07_165310) do
   create_table "omdb_items", force: :cascade do |t|
     t.string "title"
     t.date "released_date"
-    t.string "released"
+    t.date "released"
     t.interval "runtime"
     t.string "locale"
     t.string "country"

@@ -87,3 +87,59 @@ body{
   text-decoration: none;
   color: white;
 }
+.movie{
+  background: black;
+  .jumbotron {
+    background-repeat:no-repeat;
+    color: black;
+    background-size:cover;
+    top: 0;
+    height:35vw;
+    border-radius: 0;
+    z-index:-1;
+    nav {
+      background: linear-gradient(black, black 45%, transparent);
+      ol {
+        background: none;
+        li:last-child{
+          color: white;
+        }
+      }
+
+    }
+    .shadow {
+      position: fixed;
+      height: 10vh;
+      background: linear-gradient(transparent, #424242 85%, #424242);
+      bottom: 21vh;
+      width: 100%;
+      z-index:-1;
+    }
+  }
+  .container{
+    height: -webkit-fill-available;
+    min-height: 100%;
+    margin-top:-30vw;
+    padding-top:30vw;
+    .card {
+      position:fixed;
+      top:20vw;
+      left: 2vh;
+      height:auto;
+      width:14vw;
+      background:none;
+      border: none;
+    }
+    .details {
+      padding-left:5vw;
+      padding-top:3vw;
+      margin-top:-22vw;
+      min-height:30vw;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 3vw);
+      z-index:1;
+    }
+  }
+}
+.lead{
+  list-style: none;
+}
