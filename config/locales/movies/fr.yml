@@ -3,3 +3,12 @@ fr:
     index:
       released: Date de sortie
       runtime: Durée
+    show:
+      home: Accueil
+      movies: Films
+      details:
+        title: Titre
+        released: Date de sortie
+        runtime: Durée
+        country: Pays
+        available_on: Disponible le %{date}
