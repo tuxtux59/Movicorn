@@ -5,6 +5,12 @@ class OmdbItem < ApplicationRecord
   has_one_attached :banner
 
   after_save :fetch_banner, if: -> {self.title.present? && !self.banner.attached?}
+
+
+  def poster_url
+    self.poster.attached? ? self.poster : 'movie_poster.png'
+  end
+
   def banner_url
     self.banner.attached? ? self.banner : (self.poster.attached?  ? self.poster : 'movie_banner.jpg')
   end
