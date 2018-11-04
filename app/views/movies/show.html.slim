@@ -10,7 +10,8 @@
     .card
       = image_tag(@movie.poster_url, class: 'card-img-top img-thumbnail')
       .card-body.text-center
-        = link_to 'Voter',root_path, class:'btn btn-danger'
+        - in_future = @movie.status.dig(:position).positive?
+        = link_to t(".vote.#{!in_future}"),root_path, class:"btn #{in_future ? 'btn-secondary btn-sm disabled': 'btn-danger'}"
 
     .details
       h1.display-4 = @movie.title
@@ -20,8 +21,10 @@
             li
               strong = t(".details.#{k}") + ': '
               em = v.is_a?(Date)? I18n.localize(v) : v
-      - if @movie.released.present?
-        span.badge.badge-info
-          = t('.details.available_on', date: I18n.localize(@movie.released))
-        em = I18n.localize((@movie.date_free_tv))
-        em = distance_of_time_in_words((@movie.date_free_tv), Date.today)
+      ul.lead
+        - @movie.dates.each do |date|
+          li
+            - determinant = t(".details.in_future.determinant.#{date.dig(:in_future)}")
+            span.badge class="badge-#{date.dig(:in_future) ? 'warning': 'success' }"
+              = t(".details.available_on.#{date.dig(:key) || 'generic'}", determinant: determinant,date: I18n.localize(date.dig(:date)))
+            small = t(".details.in_future.#{date.dig(:in_future)}", duration: distance_of_time_in_words_to_now(date.dig(:date)))

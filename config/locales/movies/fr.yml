@@ -3,12 +3,39 @@ fr:
     index:
       released: Date de sortie
       runtime: Durée
+      title: Films
+      desc: Retrouvez les films déjà enregistrés
+      movie:
+        status:
+          after:
+            type: success
+            text: Déjà disponible partout
+          between:
+            type: warning
+            text: Partiellement disponible
+          before:
+            type: danger
+            text: N'est pas disponible ailleurs qu'en salles
     show:
       home: Accueil
       movies: Films
+      vote:
+        :true: 'Je vote pour ce film'
+        'false': 'Déjà disponible'
       details:
         title: Titre
         released: Date de sortie
         runtime: Durée
         country: Pays
-        available_on: Disponible le %{date}
+        available_on:
+          generic: Disponible le %{date}
+          vod_acte: Disponible en VOD à l'achat %{determinant} %{date}
+          tv_pay: Disponible sur la tv payante %{determinant} %{date}
+          tv_free: Disponible sur la tv gratuite %{determinant} %{date}
+          vod_abo: Disponible en VOD abonnement(ex Netflix) %{determinant} %{date}
+        in_future:
+          determinant:
+            :true: 'le'
+            'false': 'depuis'
+          :true: ' dans %{duration}'
+          'false': ' depuis %{duration}'
