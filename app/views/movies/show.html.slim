@@ -1,16 +1,30 @@
-.jumbotron style="background-image: url('#{url_for(@movie.poster)}');background-repeat:no-repeat; color: black; background-repeat: no-repeat;background-size:cover;top: 0;height:35vw; border-radius: 0px;z-index:-1;padding-top:0"
-  nav aria-label="breadcrumb"
-    ol.breadcrumb style='background: none'
-      li.breadcrumb-item = link_to t('.home'), root_path
-      li.breadcrumb-item = link_to t('.movies'), movies_path
-      li.breadcrumb-item.active aria-current="page" = @movie.title
-.container style='height: -webkit-fill-available;min-height: 100%;margin-top:-30vw; padding-top:30vw'
-  .card style=("position:fixed; top:24vw;left: 2vh;height:auto;width:14vw; background:none")
-    = image_tag(url_for(@movie.poster), class: 'card-img-top img-thumbnail') if @movie.poster.attached?
-    .card-body.text-center
-      = link_to 'Voter',root_path, class:'btn btn-danger'
+.movie
+  .jumbotron.p-0 style="background-image: url('#{url_for(@movie.banner_url)}')"
+    nav aria-label="breadcrumb"
+      ol.breadcrumb
+        li.breadcrumb-item = link_to t('.home'), root_path
+        li.breadcrumb-item = link_to t('.movies'), movies_path
+        li.breadcrumb-item.active aria-current="page" = @movie.title
+    /.shadow
+  .container
+    .card
+      = image_tag(@movie.poster_url, class: 'card-img-top img-thumbnail')
+      .card-body.text-center
+        - in_future = @movie.status.dig(:position).positive?
+        = link_to t(".vote.#{!in_future}"),root_path, class:"btn #{in_future ? 'btn-secondary btn-sm disabled': 'btn-danger'}"
 
-  .details style='padding-left:5vw;margin-top:-22vw;background:rgba(66, 66, 66, 0.85)'
-    h1.display-4 = @movie.title
-    -10.times do
-      p.lead = @movie.to_json
+    .details
+      h1.display-4 = @movie.title
+      ul.lead
+        - @movie.attributes.except('id', 'title','created_at', 'updated_at').each_pair do |k, v|
+          -if v.present? && !v.nil?
+            li
+              strong = t(".details.#{k}") + ': '
+              em = v.is_a?(Date)? I18n.localize(v) : v
+      ul.lead
+        - @movie.dates.each do |date|
+          li
+            - determinant = t(".details.in_future.determinant.#{date.dig(:in_future)}")
+            span.badge class="badge-#{date.dig(:in_future) ? 'warning': 'success' }"
+              = t(".details.available_on.#{date.dig(:key) || 'generic'}", determinant: determinant,date: I18n.localize(date.dig(:date)))
+            small = t(".details.in_future.#{date.dig(:in_future)}", duration: distance_of_time_in_words_to_now(date.dig(:date)))

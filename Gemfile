@@ -35,6 +35,7 @@ gem 'simple_form'
 gem 'mini_magick'
 
 gem 'slim'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
