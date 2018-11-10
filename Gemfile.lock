@@ -132,6 +132,8 @@ GEM
       railties (>= 3.0.0)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
+    font-awesome-rails (4.7.0.4)
+      railties (>= 3.2, < 6.0)
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -395,6 +397,7 @@ DEPENDENCIES
   duktape
   factory_bot_rails (~> 4.8, >= 4.8.2)
   faker!
+  font-awesome-rails
   guard
   guard-bundler
   guard-livereload

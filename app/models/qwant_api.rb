@@ -19,7 +19,7 @@ module QwantApi
     end
 
     def self.first(query, count = 5)
-      self.search(query, count).dig('data','result','items').first.dig('media')
+      self.search(query, count).dig('data','result','items')&.first&.dig('media')
     end
   end
 end

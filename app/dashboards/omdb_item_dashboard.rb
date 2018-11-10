@@ -33,7 +33,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
       :poster,
       :title,
       :polls,
-      :released_date,
+      :released,
       :kind,
   ].freeze
 
