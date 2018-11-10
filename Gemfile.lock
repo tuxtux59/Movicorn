@@ -177,6 +177,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
+    i18n_yaml_sorter (0.2.0)
     io-like (0.3.0)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
@@ -399,6 +400,7 @@ DEPENDENCIES
   guard-livereload
   guard-rspec (~> 4.7, >= 4.7.3)
   haml-rails (~> 1.0)
+  i18n_yaml_sorter
   jbuilder (~> 2.5)
   loofah (>= 2.2.3)
   mini_magick
