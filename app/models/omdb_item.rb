@@ -98,4 +98,20 @@ class OmdbItem < ApplicationRecord
     self.fetch_banner
     self.fetch_poster
   end
+
+  def next
+    self.class.where("id > ?", id).first
+  end
+
+  def prev
+    self.class.where("id < ?", id).last
+  end
+
+  def first?
+    self.class.first == self
+  end
+  
+  def last?
+    self.class.last == self
+  end
 end
