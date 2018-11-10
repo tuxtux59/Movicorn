@@ -71,7 +71,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how omdb items are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(omdb_item)
-  #   "OmdbItem ##{omdb_item.id}"
-  # end
+  def display_resource(omdb_item)
+    omdb_item.title
+  end
 end
