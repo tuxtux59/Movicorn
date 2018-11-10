@@ -1,10 +1,12 @@
-.container
-  h1 = t('.title')
-  p = t('.desc')
-  ul.list-unstyled.col-sm-12.col-md-6.offset-md-3.movies
+.container.px-0
+  h1.text-center = t('.title')
+  p.text-center = t('.desc')
+  ul.list-unstyled.col-xs-12.col-sm-12.col-md-12.mx-auto.movies
     - @movies.sort_by { |m|  m.status.dig(:position)}.each do |movie|
-        li
-          = link_to movie_path(movie) do
+      li.mb-2
+        = link_to movie_path(movie), class:'row' do
+          /.card.col-sm-12col-sm-12.col-lg-6.mx-auto
+          .card.col-sm-12.col-md-12.col-lg-8.mx-auto
             .media.mb-2
               = image_tag(movie.poster_url, class: 'align-self-center mr-3 img-thumbnail', style: 'height: 80px,; width: 60px')
               .media-body.align-self-center.text-left
