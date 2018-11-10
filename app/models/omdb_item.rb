@@ -3,6 +3,7 @@ class OmdbItem < ApplicationRecord
   validates :title, uniqueness: true
   has_one_attached :poster
   has_one_attached :banner
+  has_many :polls
 
   after_save :fetch_banner, if: -> {self.title.present? && !self.banner.attached?}
 
@@ -18,7 +19,7 @@ class OmdbItem < ApplicationRecord
   def dates
     pattern = 'D_MIN_'
     ENV.keys.select{|k| k.starts_with?(pattern)}.map do |key|
-      date = self.released + ENV[key].to_i.months
+      date = self.released.nil? ? ENV[key].to_i.months.from_now : self.released + ENV[key].to_i.months
       {
           in_future: Date.today <= date,
           date: date,

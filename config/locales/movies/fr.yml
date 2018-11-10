@@ -1,6 +1,8 @@
 fr:
   movies:
     index:
+      home: Accueil
+      movies: Films
       released: Date de sortie
       runtime: Durée
       title: Films

@@ -77,3 +77,7 @@ bower.json
 
 # Ignore node_modules
 node_modules/
+doc/controllers_brief.svg
+doc/controllers_complete.svg
+doc/models_brief.svg
+doc/models_complete.svg
