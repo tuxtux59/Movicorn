@@ -8,21 +8,21 @@ class UserDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    polls: Field::HasMany,
-    id: Field::Number,
-    email: Field::String,
-    encrypted_password: Field::String,
-    pseudo: Field::String,
-    reset_password_token: Field::String,
-    reset_password_sent_at: Field::DateTime,
-    remember_created_at: Field::DateTime,
-    sign_in_count: Field::Number,
-    current_sign_in_at: Field::DateTime,
-    last_sign_in_at: Field::DateTime,
-    current_sign_in_ip: Field::String.with_options(searchable: false),
-    last_sign_in_ip: Field::String.with_options(searchable: false),
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+      poll: Field::HasMany,
+      id: Field::Number,
+      email: Field::String,
+      encrypted_password: Field::String,
+      pseudo: Field::String,
+      reset_password_token: Field::String,
+      reset_password_sent_at: Field::DateTime,
+      remember_created_at: Field::DateTime,
+      sign_in_count: Field::Number,
+      current_sign_in_at: Field::DateTime,
+      last_sign_in_at: Field::DateTime,
+      current_sign_in_ip: Field::String.with_options(searchable: false),
+      last_sign_in_ip: Field::String.with_options(searchable: false),
+      created_at: Field::DateTime,
+      updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -31,7 +31,7 @@ class UserDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :polls,
+    :poll,
     :id,
     :email,
     :encrypted_password,
@@ -40,7 +40,7 @@ class UserDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :polls,
+    :poll,
     :id,
     :email,
     :encrypted_password,
@@ -61,7 +61,7 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :polls,
+    :poll,
     :email,
     :encrypted_password,
     :pseudo,

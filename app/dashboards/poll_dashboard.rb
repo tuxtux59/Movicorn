@@ -51,7 +51,7 @@ class PollDashboard < Administrate::BaseDashboard
     :comment,
   ].freeze
 
-  # Overwrite this method to customize how polls are displayed
+  # Overwrite this method to customize how poll are displayed
   # across all pages of the admin dashboard.
   #
   # def display_resource(poll)

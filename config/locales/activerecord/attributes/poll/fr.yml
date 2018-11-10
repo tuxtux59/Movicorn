@@ -1,0 +1,20 @@
+fr:
+  activerecord:
+    attributes:
+      poll: &poll_attributes
+        title: titre
+        user: Utilisateur
+        omdb_item: Media
+        comment: Commentaire
+    models:
+      poll:
+        one: Vote
+        other: Votes
+  helpers:
+    label:
+      poll:
+        <<: *poll_attributes
+  simple_form:
+    placeholders:
+      poll:
+        <<: *poll_attributes

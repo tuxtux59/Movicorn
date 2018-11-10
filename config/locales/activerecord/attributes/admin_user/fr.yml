@@ -1,0 +1,17 @@
+fr:
+  activerecord:
+    attributes:
+      admin_user: &admin_user_attributes
+        polls: Votes
+    models:
+      admin_user:
+        one: Admin
+        other: Admins
+  helpers:
+    label:
+      admin_user:
+        <<: *admin_user_attributes
+  simple_form:
+    placeholders:
+      admin_user:
+        <<: *admin_user_attributes

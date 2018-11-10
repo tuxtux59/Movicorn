@@ -1,0 +1,20 @@
+fr:
+  activerecord:
+    attributes:
+      omdb_item: &omdb_item_attributes
+        title: titre
+        polls: Votes
+        released_date: Date de sortie
+        kind: Type
+    models:
+      omdb_item:
+        one: Media
+        other: Medias
+  helpers:
+    label:
+      omdb_item:
+        <<: *omdb_item_attributes
+  simple_form:
+    placeholders:
+      omdb_item:
+        <<: *omdb_item_attributes
