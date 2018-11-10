@@ -18,7 +18,7 @@ class OmdbItem < ApplicationRecord
   def dates
     pattern = 'D_MIN_'
     ENV.keys.select{|k| k.starts_with?(pattern)}.map do |key|
-      date = self.released + ENV[key].to_i.months
+      date = self.released.nil? ? ENV[key].to_i.months.from_now : self.released + ENV[key].to_i.months
       {
           in_future: Date.today <= date,
           date: date,
