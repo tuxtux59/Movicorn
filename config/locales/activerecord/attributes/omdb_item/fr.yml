@@ -5,7 +5,15 @@ fr:
         title: titre
         polls: Votes
         released_date: Date de sortie
+        released: Date de sortie
         kind: Type
+        poster: Affiche
+        banner: Bannière
+        runtime: Durée
+        locale: Langue originelle
+        country: Pays
+        created_at: Ajouté le
+        updated_at: Mis à jour à
     models:
       omdb_item:
         one: Media

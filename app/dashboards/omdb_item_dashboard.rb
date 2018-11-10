@@ -39,7 +39,6 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :id,
     :title,
     :poster,
     :banner,
@@ -64,7 +63,6 @@ class OmdbItemDashboard < Administrate::BaseDashboard
     :banner,
     :released_date,
     :released,
-    :runtime,
     :locale,
     :country,
     :kind,
