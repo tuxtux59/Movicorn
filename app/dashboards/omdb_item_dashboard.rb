@@ -30,6 +30,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
       :id,
+      :poster,
       :title,
       :polls,
       :released_date,

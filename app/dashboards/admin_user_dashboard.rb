@@ -31,8 +31,9 @@ class AdminUserDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :email,
-    :encrypted_password,
-    :reset_password_token,
+    :sign_in_count,
+    :last_sign_in_at,
+    :last_sign_in_ip,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -40,8 +41,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :email,
-    :encrypted_password,
-    :reset_password_token,
     :reset_password_sent_at,
     :remember_created_at,
     :sign_in_count,

@@ -3,6 +3,7 @@ fr:
     attributes:
       omdb_item: &omdb_item_attributes
         title: titre
+        poll: Vote
         polls: Votes
         released_date: Date de sortie
         released: Date de sortie

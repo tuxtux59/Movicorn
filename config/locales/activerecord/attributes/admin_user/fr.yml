@@ -3,6 +3,9 @@ fr:
     attributes:
       admin_user: &admin_user_attributes
         polls: Votes
+        sign_in_count: Connexions
+        last_sign_in_ip: Dernière IP
+        last_sign_in_at: Dernière date
     models:
       admin_user:
         one: Admin

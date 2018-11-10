@@ -25,7 +25,6 @@ class PollDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :user,
     :omdb_item,
-    :id,
     :note,
   ].freeze
 
@@ -54,7 +53,7 @@ class PollDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how poll are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(poll)
-  #   "Poll ##{poll.id}"
-  # end
+  def display_resource(poll)
+    "##{poll.id} #{poll.omdb_item.kind} #{poll.user.pseudo} '#{poll.omdb_item.title}'"
+  end
 end
