@@ -8,11 +8,9 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-      poster_attachment: Field::HasOne,
-      poster_blob: Field::HasOne,
-      banner_attachment: Field::HasOne,
-      banner_blob: Field::HasOne,
-      poll: Field::HasMany,
+      poster: Field::ActiveStorage,
+      banner: Field::ActiveStorage,
+      polls: Field::HasMany,
       id: Field::Number,
       title: Field::String,
       released_date: Field::DateTime,
@@ -33,7 +31,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
       :id,
       :title,
-      :poll,
+      :polls,
       :released_date,
       :kind,
   ].freeze
@@ -43,7 +41,9 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :title,
-    :poll,
+    :poster,
+    :banner,
+    :polls,
     :released_date,
     :released,
     :runtime,
@@ -58,8 +58,10 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :poll,
+    :polls,
     :title,
+    :poster,
+    :banner,
     :released_date,
     :released,
     :runtime,

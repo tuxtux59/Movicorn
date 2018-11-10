@@ -31,7 +31,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
+#administrate
 gem "administrate"
+gem 'administrate-field-active_storage'
 
 gem 'sqreen'
 
