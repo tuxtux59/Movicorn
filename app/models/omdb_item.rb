@@ -88,6 +88,11 @@ class OmdbItem < ApplicationRecord
     end
   end
 
+  def simple_update_async
+    self.fetch_banner
+    self.fetch_poster
+  end
+
   def update_async
     self.update_ref_id
     self.fetch_banner
