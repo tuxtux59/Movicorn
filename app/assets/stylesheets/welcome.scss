@@ -83,11 +83,25 @@ body{
   background:transparent;
 }
 
-.movies li a {
-  text-decoration: none;
-  color: black;
-  @media (max-width: 824px){
-    font-size: 28px;
+.movies {
+  nav {
+    background: linear-gradient(black, black 45%, transparent);
+    ol {
+      background: none;
+      li a {
+        color: white;
+      }
+      li:last-child{
+        color: gray;
+      }
+    }
+  }
+  li a {
+    text-decoration: none;
+    color: black;
+    @media (max-width: 824px) {
+      font-size: 28px;
+    }
   }
 }
 .movie{
