@@ -11,7 +11,7 @@ class PollDashboard < Administrate::BaseDashboard
     user: Field::BelongsTo,
     omdb_item: Field::BelongsTo,
     id: Field::Number,
-    note: Field::Number,
+    note: Field::Number.with_options(suffix: '/5'),
     comment: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
