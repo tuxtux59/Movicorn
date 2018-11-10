@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   before_action :set_movie , only: [:show]
   def index
-    @movies = OmdbItem.all.sort_by{|i| i.title}
+    @movies = OmdbItem.all.sort_by{|i| i.title.present? ? i.title : ''}
   end
 
   def show
