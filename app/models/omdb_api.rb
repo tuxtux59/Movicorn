@@ -15,18 +15,21 @@ module OmdbApi
     require 'open-uri'
     API_KEY = '?apikey=f032e0a4'
 
+    def self.data_by_title(title)
+      JSON.parse OmdbApi.omdb_client[API_KEY].get({params: {t: title}})
+    end
+
     def self.item_by_title(title)
       begin
         db_results = OmdbItem.where("lower(title) = ?", title.downcase)
         if db_results.any?
           return db_results.first
         else
-          result = JSON.parse OmdbApi.omdb_client[API_KEY].get({params: {t: title}})
+          result = data_by_title(title)
           if result.present? && result.is_a?(Hash) && result.keys.any?
             valid_keys = OmdbItem.column_names
             result2 = {}
             result.each_pair{|k,v| result2.merge!({k.downcase => v}) if valid_keys.include?(k.downcase)}
-
           end
           item = OmdbItem.create(result2) if result2.keys.any?
           if result.key?('Poster')
@@ -34,6 +37,8 @@ module OmdbApi
             if file.present?
               item.poster.attach(io: file, filename: "#{item.title}.jpg")
             end
+          else
+            item.fetch_poster
           end
           return item
         end
