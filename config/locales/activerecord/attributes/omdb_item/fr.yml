@@ -2,18 +2,18 @@ fr:
   activerecord:
     attributes:
       omdb_item: &omdb_item_attributes
-        title: titre
-        poll: Vote
-        polls: Votes
-        released_date: Date de sortie
-        released: Date de sortie
-        kind: Type
-        poster: Affiche
         banner: Bannière
-        runtime: Durée
-        locale: Langue originelle
         country: Pays
         created_at: Ajouté le
+        kind: Type
+        locale: Langue originelle
+        poll: Vote
+        polls: Votes
+        poster: Affiche
+        released: Date de sortie
+        released_date: Date de sortie
+        runtime: Durée
+        title: titre
         updated_at: Mis à jour à
     models:
       omdb_item:

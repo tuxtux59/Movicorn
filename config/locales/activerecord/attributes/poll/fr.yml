@@ -2,10 +2,10 @@ fr:
   activerecord:
     attributes:
       poll: &poll_attributes
+        comment: Commentaire
+        omdb_item: Media
         title: titre
         user: Utilisateur
-        omdb_item: Media
-        comment: Commentaire
     models:
       poll:
         one: Vote
