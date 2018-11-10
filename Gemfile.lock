@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/getsentry/raven-ruby.git
+  revision: 62ee180b2ec9618397ca6ec52a11485244950dac
+  specs:
+    sentry-raven (2.7.4)
+      faraday (>= 0.7.6, < 1.0)
+
+GIT
   remote: https://github.com/stympy/faker.git
   revision: ed7c1dc6c80208bcc9a10d238a2b7a312d887a9e
   branch: master
@@ -130,6 +137,8 @@ GEM
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
+    faraday (0.15.3)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
     font-awesome-rails (4.7.0.4)
@@ -226,6 +235,7 @@ GEM
     msgpack (1.2.4)
     msgpack (1.2.4-x64-mingw32)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.3.1)
@@ -416,6 +426,7 @@ DEPENDENCIES
   rspec-rails (~> 3.7, >= 3.7.2)
   sass-rails (~> 5.0)
   selenium-webdriver
+  sentry-raven!
   simple_form
   slim
   sqreen
