@@ -3,6 +3,7 @@ class OmdbItem < ApplicationRecord
   validates :title, uniqueness: true
   has_one_attached :poster
   has_one_attached :banner
+  has_many :polls
 
   after_save :fetch_banner, if: -> {self.title.present? && !self.banner.attached?}
 
