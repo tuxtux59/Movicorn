@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :omdb_items
       resources :polls
 
-      root to: "admin_users#index"
+      root to: "omdb_items#index"
     end
   devise_for :admin_users
   devise_for :users
