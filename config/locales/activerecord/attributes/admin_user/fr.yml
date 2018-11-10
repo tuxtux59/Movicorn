@@ -1,4 +1,11 @@
 fr:
+  admin_users:
+    sessions:
+      new:
+        sign_in: Connexion
+        caption:
+          title: Accès réglementé
+          desc: Cette partie reste privée, si tu montres pate blanche tu pourras peut être y accéder
   activerecord:
     attributes:
       admin_user: &admin_user_attributes
