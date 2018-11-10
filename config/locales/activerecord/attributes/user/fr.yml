@@ -1,0 +1,17 @@
+fr:
+  activerecord:
+    attributes:
+      user: &user_attributes
+        polls: Votes
+    models:
+      user:
+        one: Utilisateur
+        other: Utilisateurs
+  helpers:
+    label:
+      user:
+        <<: *user_attributes
+  simple_form:
+    placeholders:
+      user:
+        <<: *user_attributes

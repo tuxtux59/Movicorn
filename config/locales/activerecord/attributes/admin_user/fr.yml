@@ -1,0 +1,27 @@
+fr:
+  admin_users:
+    sessions:
+      new:
+        sign_in: Connexion
+        caption:
+          title: Accès réglementé
+          desc: Cette partie reste privée, si tu montres pate blanche tu pourras peut être y accéder
+  activerecord:
+    attributes:
+      admin_user: &admin_user_attributes
+        last_sign_in_at: Dernière date
+        last_sign_in_ip: Dernière IP
+        polls: Votes
+        sign_in_count: Connexions
+    models:
+      admin_user:
+        one: Admin
+        other: Admins
+  helpers:
+    label:
+      admin_user:
+        <<: *admin_user_attributes
+  simple_form:
+    placeholders:
+      admin_user:
+        <<: *admin_user_attributes

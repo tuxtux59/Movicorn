@@ -1,43 +1,43 @@
 fr:
   movies:
     index:
+      desc: Retrouvez les films déjà enregistrés
       home: Accueil
+      movie:
+        status:
+          after:
+            text: Déjà disponible partout
+            type: success
+          before:
+            text: N'est pas disponible ailleurs qu'en salles
+            type: danger
+          between:
+            text: Partiellement disponible
+            type: warning
       movies: Films
       released: Date de sortie
       runtime: Durée
       title: Films
-      desc: Retrouvez les films déjà enregistrés
-      movie:
-        status:
-          after:
-            type: success
-            text: Déjà disponible partout
-          between:
-            type: warning
-            text: Partiellement disponible
-          before:
-            type: danger
-            text: N'est pas disponible ailleurs qu'en salles
     show:
-      home: Accueil
-      movies: Films
-      vote:
-        :true: 'Je vote pour ce film'
-        'false': 'Déjà disponible'
       details:
-        title: Titre
-        released: Date de sortie
-        runtime: Durée
-        country: Pays
         available_on:
           generic: Disponible le %{date}
-          vod_acte: Disponible en VOD à l'achat %{determinant} %{date}
-          tv_pay: Disponible sur la tv payante %{determinant} %{date}
           tv_free: Disponible sur la tv gratuite %{determinant} %{date}
+          tv_pay: Disponible sur la tv payante %{determinant} %{date}
           vod_abo: Disponible en VOD abonnement(ex Netflix) %{determinant} %{date}
+          vod_acte: Disponible en VOD à l'achat %{determinant} %{date}
+        country: Pays
         in_future:
           determinant:
             :true: 'le'
             'false': 'depuis'
           :true: ' dans %{duration}'
           'false': ' depuis %{duration}'
+        released: Date de sortie
+        runtime: Durée
+        title: Titre
+      home: Accueil
+      movies: Films
+      vote:
+        :true: 'Je vote pour ce film'
+        'false': 'Déjà disponible'
