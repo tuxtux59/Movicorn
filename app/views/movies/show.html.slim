@@ -11,7 +11,7 @@
       = image_tag(@movie.poster_url, class: 'card-img-top img-thumbnail')
       .card-body.text-center
         - in_future = @movie.status.dig(:position).positive?
-        = link_to t(".vote.#{!in_future}"),root_path, class:"btn #{in_future ? 'btn-secondary btn-sm disabled': 'btn-danger'}"
+        = link_to t(".vote.#{!in_future}"),root_path, class:"btn #{in_future ? 'btn-secondary btn-xs disabled': 'btn-danger'}", style: 'white-space: normal'
 
     .details
       h1.display-4 = @movie.title

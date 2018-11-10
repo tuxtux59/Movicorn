@@ -1,20 +1,27 @@
-.container
-  h1 = t('.title')
-  p = t('.desc')
-  ul.list-unstyled.col-sm-12.col-md-6.offset-md-3.movies
-    - @movies.sort_by { |m|  m.status.dig(:position)}.each do |movie|
-        li
-          = link_to movie_path(movie) do
-            .media.mb-2
-              = image_tag(movie.poster_url, class: 'align-self-center mr-3 img-thumbnail', style: 'height: 80px,; width: 60px')
-              .media-body.align-self-center.text-left
-                h5.mb-1 = movie.title
-                - status = movie.status
-                span.badge class="badge-#{t(".movie.status.#{status.dig(:key)}.type")}"
-                  = t(".movie.status.#{status.dig(:key)}.text")
-                ul.list-unstyled
-                  - movie.attributes.slice('runtime', 'released').each_pair do |k, v|
-                    li
-                      strong
-                        = t(".#{k}")+ ': '
-                      em = v.is_a?(Date)? I18n.localize(v) : v
+.movies
+  nav aria-label="breadcrumb"
+    ol.breadcrumb
+      li.breadcrumb-item = link_to t('.home'), root_path
+      li.breadcrumb-item.active aria-current="page" = t('.movies')
+  .container.px-0
+    h1.text-center = t('.title')
+    p.text-center = t('.desc')
+    ul.list-unstyled.col-xs-12.col-sm-12.col-md-12.mx-auto.movies
+      - @movies.sort_by { |m|  m.status.dig(:position)}.each do |movie|
+        li.mb-2
+          = link_to movie_path(movie), class:'row' do
+            /.card.col-sm-12col-sm-12.col-lg-6.mx-auto
+            .card.col-sm-12.col-md-12.col-lg-8.mx-auto
+              .media.mb-2
+                = image_tag(movie.poster_url, class: 'align-self-center mr-3 img-thumbnail', style: 'height: 80px,; width: 60px')
+                .media-body.align-self-center.text-left
+                  h5.mb-1 = movie.title
+                  - status = movie.status
+                  span.badge class="badge-#{t(".movie.status.#{status.dig(:key)}.type")}"
+                    = t(".movie.status.#{status.dig(:key)}.text")
+                  ul.list-unstyled
+                    - movie.attributes.slice('runtime', 'released').each_pair do |k, v|
+                      li
+                        strong
+                          = t(".#{k}")+ ': '
+                        em = v.is_a?(Date)? I18n.localize(v) : v
