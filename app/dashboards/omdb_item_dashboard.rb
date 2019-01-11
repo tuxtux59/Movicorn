@@ -9,6 +9,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
       poster: Field::ActiveStorage,
+      poster_url: Field::String,
       banner: Field::ActiveStorage,
       polls: Field::HasMany,
       id: Field::Number,
@@ -30,7 +31,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
       :id,
-      :poster,
+      #:poster,
       :title,
       :polls,
       :released,
@@ -41,8 +42,9 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :title,
-    :poster,
-    :banner,
+    :poster_url,
+    #:poster,
+    #:banner,
     :polls,
     :released_date,
     :released,
