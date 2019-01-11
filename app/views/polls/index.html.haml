@@ -1,0 +1,18 @@
+%h1 Listing movies_polls
+
+%table
+  %thead
+    %tr
+      %th Record
+      %th
+      %th
+      %th
+
+  %tbody
+    - @movies_polls.each do |movies_poll|
+      %tr
+        %td= movies_poll.to_s
+        %td= link_to fa_icon('eye'), movie_poll_path(movies_poll.omdb_item,movies_poll)
+        %td= link_to fa_icon('pencil'), edit_movie_poll_path(movies_poll.omdb_item,movies_poll)
+        %td= link_to fa_icon('trash'), movie_poll_path(movies_poll.omdb_item,movies_poll), method: :delete, data: { confirm: 'Are you sure?' }
+

@@ -1,0 +1,19 @@
+-#frozen_string_literal: true
+p.text-center
+  = raw t('.new_movie_poll_for_user', movie_title: @movie.title, pseudo: current_user.pseudo)
+  = simple_form_for(@movie_poll, url: movie_polls_path(@movie)) do |f|
+    = flash[:error]
+    = f.error_notification
+    = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+    = f.input :omdb_item_id, type: :hidden, value: @movie.id
+    = f.input :user_id, type: :hidden, value: current_user.id
+    .form-inputs
+      label.mr-2 = t('.note')
+      - collection = Poll::NOTE_RANGE.map{|n| [n, t("activerecord.attributes.poll.notes.#{I18n.with_locale(:en) {n.to_words }}")]}
+      /= debug collection
+      = f.collection_radio_buttons :note, collection, :first, :last do |b|
+        = b.radio_button + b.label(class: 'mx-2')
+      end
+      = f.input :comment
+    .form-actions
+      = f.button :submit, t('.submit'), class: 'btn btn-primary'

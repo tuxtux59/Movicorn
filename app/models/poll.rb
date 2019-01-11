@@ -4,5 +4,7 @@ class Poll < ApplicationRecord
 
   validates_presence_of :user, :omdb_item
 
-  validates :note, :inclusion => { :in => 1..5 }
+  NOTE_RANGE = 1..5
+
+  validates :note, :inclusion => { :in => NOTE_RANGE }
 end

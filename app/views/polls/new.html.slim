@@ -1,0 +1,5 @@
+.container.mt-4.px-0 style="background-image:url('#{url_for(@movie.banner)}'); height: 100%;color: white;background-size: cover; background-repeat:none;border-radius: 3rem;"
+  .col style="background-color: rgba(0,0,0,0.6);padding: 2rem;border-radius: 3rem;"
+    = link_to 'Back', movie_path(@movie)
+    h1 = t('.title', movie_title: @movie.title)
+    = render 'form'

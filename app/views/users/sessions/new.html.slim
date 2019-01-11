@@ -1,0 +1,21 @@
+section.login-block
+  .container
+    .row
+      .col-md-4.login-sec
+        h2.text-center = t('.sign_in')
+        = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          = f.input :email, label: t('.email'), required: false, autofocus: true, input_html: { autocomplete: "email" }
+          = f.input :password, label: t('.password'), required: false, input_html: { autocomplete: "current-password" }
+          = f.input :remember_me, label: t('.remember_me'),  as: :boolean if devise_mapping.rememberable?
+          .form-check
+            = f.button :submit, t('.log_in'), class:'btn btn-primary'
+        = render "users/shared/links"
+      .col-md-8.banner-sec
+        #carouselExampleIndicators.carousel.slide data-ride="carousel"
+          .carousel-inner role="listbox"
+            .carousel-item.active style="height: -webkit-fill-available"
+              img.d-block.img-fluid alt=("First slide") src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-19000.jpg" style="height: inherit"
+              .carousel-caption.d-none.d-md-block
+                .banner-text
+                  h2 = t('.caption.title')
+                  p = t('.caption.desc')

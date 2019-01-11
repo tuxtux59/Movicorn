@@ -25,6 +25,7 @@ gem 'simple_form'
 gem 'mini_magick'
 
 gem 'slim'
+gem 'numbers_and_words'
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -36,7 +37,6 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem "administrate"
 gem 'administrate-field-active_storage'
 
-gem "sentry-raven", :github => "getsentry/raven-ruby"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -67,6 +67,7 @@ end
 
 group :production do
   gem 'sqreen'
+  gem "sentry-raven", :github => "getsentry/raven-ruby"
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

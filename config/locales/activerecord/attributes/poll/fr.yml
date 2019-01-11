@@ -1,4 +1,10 @@
 fr:
+  polls:
+    new:
+      title: Voter pour %{movie_title}
+    form:
+      new_movie_poll_for_user: "Bonjour <strong>%{pseudo}</strong>, tu désirerais pouvoir déjà profiter de <strong>'%{movie_title}'</strong> ?<br/>Alors remplis ce formulaire"
+      submit: Voter
   activerecord:
     attributes:
       poll: &poll_attributes
@@ -6,6 +12,13 @@ fr:
         omdb_item: Media
         title: titre
         user: Utilisateur
+        note: Note
+        notes:
+          one: Peu enchanté
+          two: ça va
+          three: Moyen
+          four: Il m'a bien plu
+          five: Pourquoi ce n'est pas déjà anthologique
     models:
       poll:
         one: Vote

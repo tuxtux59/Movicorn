@@ -17,7 +17,7 @@
       = image_tag(@movie.poster_url, class: 'card-img-top img-thumbnail')
       .card-body.text-center.px-0
         - in_future = @movie.status.dig(:position).positive?
-        = link_to root_path, class:"btn #{in_future ? 'btn-secondary btn-xs disabled': 'btn-danger'}", style: 'white-space: normal' do
+        = link_to new_movie_poll_path(@movie), class:"btn #{in_future ? 'btn-secondary btn-xs disabled': 'btn-danger'}", style: 'white-space: normal' do
           = fa_icon 'sticky-note'
           = " #{t(".vote.#{!in_future}")}"
     .details

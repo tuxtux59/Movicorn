@@ -1,4 +1,19 @@
 fr:
+  users:
+    shared:
+      links:
+        forgot_password: Mot de passe oublié?
+        sign_up: S'inscrire
+    sessions:
+      new:
+        sign_in: Connexion
+        email: Adresse email
+        password: Mot de passe
+        remember_me: Se souvenir de moi
+        log_in: Me connecter
+        caption:
+          title: Connexion nécessaire
+          desc: Notre licorne ne laisse pas ses secrets à tout le monde, connecte toi pour les découvrir
   activerecord:
     attributes:
       user: &user_attributes
