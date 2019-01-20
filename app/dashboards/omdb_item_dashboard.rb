@@ -8,9 +8,8 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-      poster: Field::ActiveStorage,
       poster_url: Field::String,
-      banner: Field::ActiveStorage,
+      banner_url: Field::String,
       polls: Field::HasMany,
       id: Field::Number,
       title: Field::String,
@@ -31,7 +30,6 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
       :id,
-      #:poster,
       :title,
       :polls,
       :released,
@@ -43,8 +41,7 @@ class OmdbItemDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :title,
     :poster_url,
-    #:poster,
-    #:banner,
+    :banner_url,
     :polls,
     :released_date,
     :released,
