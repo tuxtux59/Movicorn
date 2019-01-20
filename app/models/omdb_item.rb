@@ -1,8 +1,6 @@
 class OmdbItem < ApplicationRecord
 
   validates :title, uniqueness: true
-  has_one_attached :poster
-  has_one_attached :banner
   has_many :polls
 
   after_save :fetch_banner, if: -> {self.title.present? && !self.banner.attached?}
@@ -12,14 +10,6 @@ class OmdbItem < ApplicationRecord
     return if self.title.blank?
     ref_id = OmdbApi::Search.data_by_title(self.title).dig('imdbID')
     self.update_column(:ref_id, ref_id) if ref_id.present?
-  end
-
-  def poster_url
-    self.poster.attached? ? self.poster : 'movie_poster.png'
-  end
-
-  def banner_url
-    self.banner.attached? ? self.banner : (self.poster.attached?  ? self.poster : 'movie_banner.jpg')
   end
 
   def dates
@@ -48,20 +38,14 @@ class OmdbItem < ApplicationRecord
     banner_title = "movie banner #{self.title}"
     url = QwantApi::Image.first(banner_title)
     return if url.nil? || url.empty?
-    file = open(url)
-    if file.present?
-      self.banner.attach(io: file, filename: "#{banner_title.underscore}.jpg")
-    end
+    self.update_attributes!(banner_url: url)
   end
 
   def fetch_poster
     poster_title = "movie poster #{self.title}"
     url = QwantApi::Image.first(poster_title)
     return if url.nil? || url.empty?
-    file = open(url)
-    if file.present?
-      self.poster.attach(io: file, filename: "#{poster_title.underscore}.jpg")
-    end
+    self.update_attributes!(poster_url: url)
   end
 
   def fetch_banner_async

@@ -23,7 +23,7 @@
     .details
       h1.display-4 = @movie.title
       ul.lead
-        - @movie.attributes.except('id', 'title','created_at', 'updated_at').each_pair do |k, v|
+        - @movie.attributes.except('id', 'title','created_at', 'updated_at', 'banner_url', 'poster_url').each_pair do |k, v|
           -if v.present? && !v.nil?
             li
               strong = t(".details.#{k}") + ': '
