@@ -16,3 +16,19 @@
               = text_field_tag :query, nil, placeholder: 'Titre du film', class: 'form-control', required: true
               .input-group-addon
                 = submit_tag 'Rechercher', class: 'btn btn-submit btn-secondary'
+    .row.d-flex.justify-content-center
+      hr
+    .row.d-flex.justify-content-center style="color: #C0C0C0"
+      .card.p-2
+        h3 But du projet
+        .card-body
+          p
+            = raw "Ce projet est une <u>preuve de concept</u> et a pour but de mettre en avant la lenteur de la <strong style='color:#29b6f6'>chronologie des médias</strong> en donnant la parole au public."
+          p
+            = 'Choses à savoir:'
+          ul
+            li = 'Ce projet est à but non commercial ni lucratif'
+            li
+              = raw "Les oeuvres présentées ici ne servent que d'illustration et n'appartiennent pas au projet, pour toute réclamation "
+              = link_to 'Contactez-moi' , 'mailto:contact@tiboreno.dev'
+            li = "Ce projet est basé sur l'API OMDB"
