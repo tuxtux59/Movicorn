@@ -39,6 +39,9 @@ class OmdbItem < ApplicationRecord
     url = QwantApi::Image.first(banner_title)
     return if url.nil? || url.empty?
     self.update_attributes!(banner_url: url)
+  rescue StandardError => e
+    puts e.message
+    Raven.capture_exception(e)
   end
 
   def fetch_poster
@@ -46,6 +49,9 @@ class OmdbItem < ApplicationRecord
     url = QwantApi::Image.first(poster_title)
     return if url.nil? || url.empty?
     self.update_attributes!(poster_url: url)
+  rescue StandardError => e
+    puts e.message
+    Raven.capture_exception(e)
   end
 
   def fetch_banner_async
