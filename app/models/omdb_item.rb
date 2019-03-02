@@ -3,7 +3,7 @@ class OmdbItem < ApplicationRecord
   validates :title, uniqueness: true
   has_many :polls
 
-  after_save :fetch_banner, if: -> {self.title.present? && !self.banner.attached?}
+  after_save :fetch_banner, if: -> {self.title.present? && self.banner_url.nil?}
 
 
   def update_ref_id
